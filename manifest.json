@@ -3,7 +3,18 @@
   "description": "もうYouTube Shortsに時間を奪われるのはやめにしましょう",
   "version": "1.0",
   "manifest_version": 3,
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "action": {
     "default_popup": "popup.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["https://youtube.com/*", "https://www.youtube.com/*"]
+    }
+  ]
 }
