@@ -10,5 +10,11 @@
   },
   "action": {
     "default_popup": "popup.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["https://youtube.com/*", "https://www.youtube.com/*"]
+    }
+  ]
 }
